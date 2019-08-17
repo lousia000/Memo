@@ -2,4 +2,4 @@
 
 ## Git
 
-- [LF will be replaced by CRLF in README.md.](Git\LF.md)
+- [LF will be replaced by CRLF in README.md.]([Git\LF.md](https://github.com/lousia000/Memo/blob/master/GIt/LF.md))

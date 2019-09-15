@@ -276,14 +276,42 @@ crit       | 关键阶段
 
 [https://github.com/mbostock/d3/wiki/Time-Formatting](https://github.com/mbostock/d3/wiki/Time-Formatting)
 
-
-
-
-
-```markdown
-
-```
+### 中文演示
 
 ```mermaid
-sequenceDiagram
+gantt
+    title 项目开发流程
+    section 项目确定
+        需求分析       :a1, 2016-06-22, 3d
+        可行性报告     :after a1, 5d
+        概念验证       : 5d
+    section 项目实施
+        概要设计      :2016-07-05, 5d
+        详细设计      :2016-07-08, 10d
+        编码          :2016-07-15, 10d
+        测试          :2016-07-22, 5d
+    section 发布验收
+        发布: 2d
+        验收: 3d
 ```
+
+### 第三方接口
+
+Gravizo：http://g.gravizo.com/
+
+打开上面这个网站, 这个网站提供动态生成各种图的http接口
+
+像这样使用, 接口根据传入的参数返回图
+
+<img src='https://g.gravizo.com/svg?
+ digraph G {
+   main -> parse -> execute;
+   main -> init;
+   main -> cleanup;
+   execute -> make_string;
+   execute -> printf
+   init -> make_string;
+   main -> printf;
+   execute -> compare;
+ }
+'/>
